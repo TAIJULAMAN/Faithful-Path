@@ -16,7 +16,7 @@ const Navbar = () => {
   return (
     <div className="sticky z-10 w-full text-[#2e424d] bg-[#F7F3DE] px-[100px] shadow-lg">
       <div>
-        <div className=" flex flex-row justify-between py-10">
+        <div className=" flex flex-row justify-between py-8">
           <div className=" flex flex-row items-center cursor-pointer">
             <Link to="/" spy={true} smooth={true} duration={500}>
               <h1 className=" text-2xl font-semibold hover:text-[#98dad9]">
@@ -25,7 +25,7 @@ const Navbar = () => {
             </Link>
           </div>
 
-          <nav className="font-semibold hidden lg:flex flex-row items-center text-lg gap-8">
+          <nav className="font-semibold hidden lg:flex flex-row items-center text-xl gap-8">
             <Link
               to="/quran"
               spy={true}
@@ -93,7 +93,7 @@ const Navbar = () => {
 
           <div className="hidden lg:flex">
             <Link to="/">
-              <button className="shadow-lg text-[#2e424d] font-semibold hover:bg-[#98dad9] bg-white px-4 py-2 rounded-md transition duration-300 ease-in-out">
+              <button className="text-xl shadow-lg text-[#2e424d] font-semibold hover:bg-[#98dad9] bg-white px-5 py-3 rounded-md transition duration-300 ease-in-out">
                 ডোনেশন
               </button>
             </Link>
