@@ -2,8 +2,7 @@ import React from "react";
 
 function RojaVangarKaron() {
   return (
-    <div>
-      <h1>যে সমস্ত কারণে রোযা ভেঙ্গে যায়</h1>
+    <div className="space-y-2 mb-5 text-xl">
       <p>
         রোযা অবস্থায় পানাহার ও যৌনাচার থেকে বিরত থাকা জরুরি, সুতরাং যদি কোন
         ব্যক্তি দিনের বেলায় ইচ্ছা করে উপরোল্লিখিত তিনটি কাজের যে কোন একটি কাজ

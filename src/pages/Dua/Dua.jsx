@@ -1,9 +1,3 @@
-// #EFCDCC
-// #D7EAF8
-// #E4E4E4
-// #EBE2D0
-// bg-#FFFFFF
-
 import React from "react";
 import { Link } from "react-router-dom";
 

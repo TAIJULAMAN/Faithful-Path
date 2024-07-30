@@ -5,10 +5,11 @@ import Sahri from "../../components/Roja/Sahri/Sahri";
 import RojarNiyat from "../../components/Roja/RojarNiyat/RojarNiyat";
 import Iftar from "../../components/Roja/Iftar/Iftar";
 import RojaVangarKaron from "../../components/Roja/RojaVangarKaron/RojaVangarKaron";
+import RojaNaVangarKaron from "../../components/Roja/RojaNaVangarKaron/RojaNaVangarKaron";
 
 function Roja() {
   return (
-    <>
+    <div className="bg-[#e8e9f3] text-[#2e424d] px-[100px]">
       <div className="py-10">
         <h1 className="bg-[#98dad9] text-center py-5 my-5 rounded-md font-bold text-xl">
           রমজানের ফাযায়েল
@@ -45,7 +46,13 @@ function Roja() {
         </h1>
         <RojaVangarKaron />
       </div>
-    </>
+      <div className="py-10">
+        <h1 className="bg-[#98dad9] text-center py-5 my-5 rounded-md font-bold text-xl">
+          যে সব কারণে রোযা ভঙ্গ হয় না
+        </h1>
+        <RojaNaVangarKaron />
+      </div>
+    </div>
   );
 }
 
