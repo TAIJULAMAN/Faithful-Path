@@ -17,6 +17,9 @@ import Durud from "../../components/Dua/Durud/Durud";
 import Istigfar from "../../components/Dua/Istigfar/Istigfar";
 import Rabbana from "../../components/Rabbana/Rabbana";
 import AllahHumma from "../../components/Dua/AllahHumma/AllahHumma";
+import Azan from "../../components/Dua/Azan/Azan";
+import Ozu from "../../components/Dua/Ozu/Ozu";
+import Mosjid from "../../components/Dua/Mosjid/Mosjid";
 
 function Dua() {
   return (
@@ -127,44 +130,62 @@ function Dua() {
         <h1 className="bg-[#98dad9] text-center py-5 my-5 rounded-md font-bold text-xl">
           আল্লাহুম্মা
         </h1>
-        <AllahHumma/>
+        <AllahHumma />
       </div>
-      <div className="py-10">
+      {/* <div className="py-10">
         <h1 className="bg-[#98dad9] text-center py-5 my-5 rounded-md font-bold text-xl">
-          আল্লাহুম্মা
+          আজান
         </h1>
-        <AllahHumma/>
-      </div>
-      <div className="py-10">
+        <Azan />
+      </div> */}
+      {/* <div className="py-10">
         <h1 className="bg-[#98dad9] text-center py-5 my-5 rounded-md font-bold text-xl">
-          আল্লাহুম্মা
+          ওজু
         </h1>
-        <AllahHumma/>
-      </div>
-      <div className="py-10">
+        <Ozu />
+      </div> */}
+      {/* <div className="py-10">
         <h1 className="bg-[#98dad9] text-center py-5 my-5 rounded-md font-bold text-xl">
-          আল্লাহুম্মা
+          মসজিদ
         </h1>
-        <AllahHumma/>
-      </div>
-      <div className="py-10">
+        <Mosjid />
+      </div> */}
+      {/* <div className="py-10">
         <h1 className="bg-[#98dad9] text-center py-5 my-5 rounded-md font-bold text-xl">
-          আল্লাহুম্মা
+          নামাজের মধ্যে
         </h1>
-        <AllahHumma/>
-      </div>
-      <div className="py-10">
+        <InNamaz />
+      </div> */}
+      {/* <div className="py-10">
         <h1 className="bg-[#98dad9] text-center py-5 my-5 rounded-md font-bold text-xl">
-          আল্লাহুম্মা
+          নামাজের শেষে
         </h1>
-        <AllahHumma/>
-      </div>
-      <div className="py-10">
+        <OutNamaz />
+      </div> */}
+      {/* <div className="py-10">
         <h1 className="bg-[#98dad9] text-center py-5 my-5 rounded-md font-bold text-xl">
-          আল্লাহুম্মা
+          রমাযান
         </h1>
-        <AllahHumma/>
-      </div>
+        <Ramadan />
+      </div> */}
+      {/* <div className="py-10">
+        <h1 className="bg-[#98dad9] text-center py-5 my-5 rounded-md font-bold text-xl">
+          হজ্জ
+        </h1>
+        <Hajj />
+      </div> */}
+      {/* <div className="py-10">
+        <h1 className="bg-[#98dad9] text-center py-5 my-5 rounded-md font-bold text-xl">
+          ঈদ
+        </h1>
+        <Eid />
+      </div> */}
+      {/* <div className="py-10">
+        <h1 className="bg-[#98dad9] text-center py-5 my-5 rounded-md font-bold text-xl">
+          ঋণ
+        </h1>
+        <Loan />
+      </div> */}
     </div>
   );
 }

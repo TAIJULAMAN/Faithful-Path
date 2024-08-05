@@ -1,9 +1,9 @@
 import React from 'react'
 
-function Rabbana() {
+function Azan() {
   return (
     <div>Comming soon....</div>
   )
 }
 
-export default Rabbana
+export default Azan

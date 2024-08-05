@@ -1,9 +1,9 @@
 import React from 'react'
 
-function Rabbana() {
+function Loan() {
   return (
     <div>Comming soon....</div>
   )
 }
 
-export default Rabbana
+export default Loan

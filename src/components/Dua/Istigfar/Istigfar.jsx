@@ -2,7 +2,7 @@ import React from 'react'
 
 function Istigfar() {
   return (
-    <div>Istigfar</div>
+    <div>Comming soon....</div>
   )
 }
 

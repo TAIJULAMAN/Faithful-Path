@@ -2,7 +2,7 @@ import React from 'react'
 
 function Durud() {
   return (
-    <div>Durud</div>
+    <div>Comming soon....</div>
   )
 }
 

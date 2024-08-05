@@ -1,9 +1,7 @@
-import React from 'react'
+import React from "react";
 
 function AllahHumma() {
-  return (
-    <div>AllahHumma</div>
-  )
+  return <div>Comming soon....</div>;
 }
 
-export default AllahHumma
+export default AllahHumma;
