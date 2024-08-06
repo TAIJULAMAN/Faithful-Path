@@ -55,11 +55,14 @@ function Imaniat() {
       arabic: "اَللّٰهُمَّ جَدِّدِ الْإِيْمَانَ فِي قُلُوْبِنَا ",
       bangla: "আল্লাহুম্মা জাদ্দিদিল ঈমানা ফি কুলুবিনা",
       meaning: "হে আল্লাহ, তুমি আমাদের হৃদয়ের ইমানকে নবায়ন করে দাও।",
-    }
+    },
   ];
   return (
     <>
-      <div className="relative text-xl">
+      <div className="relative text-xl bg-[#e8e9f3] text-[#2e424d] px-[100px] py-10">
+        <h1 className="bg-[#98dad9] text-center py-5 my-10 rounded-md font-bold text-xl">
+          ঈমানিয়্যাত
+        </h1>
         <ul className="space-y-2">
           {imaniat.map((data, id) => (
             <li
