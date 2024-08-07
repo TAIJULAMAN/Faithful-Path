@@ -1,57 +1,65 @@
 import React from "react";
-import RojaFazael from "../../components/Roja/RojaFazael/RojaFazael";
-import Tarabih from "../../components/Roja/Tarabih/Tarabih";
-import Sahri from "../../components/Roja/Sahri/Sahri";
-import RojarNiyat from "../../components/Roja/RojarNiyat/RojarNiyat";
-import Iftar from "../../components/Roja/Iftar/Iftar";
-import RojaVangarKaron from "../../components/Roja/RojaVangarKaron/RojaVangarKaron";
-import RojaNaVangarKaron from "../../components/Roja/RojaNaVangarKaron/RojaNaVangarKaron";
+import { Link } from "react-router-dom";
 
 function Roja() {
+  const roja = [
+    {
+      id: 1,
+      name: "রমজানের ফাযায়েল",
+      src: "/RojaFazael",
+      color: "#e8e9f3",
+    },
+    {
+      id: 2,
+      name: "তারাবীর নামায",
+      src: "/time",
+      color: "#EFCDCC",
+    },
+    {
+      id: 3,
+      name: "সাহরী",
+      src: "/Sahri",
+      color: "#D3E0EA",
+    },
+    {
+      id: 4,
+      name: "রোযার নিয়্যাত",
+      src: "/RojarNiyat",
+      color: "#FFE5B4",
+    },
+    {
+      id: 5,
+      name: "ইফতার",
+      src: "/Iftar",
+      color: "#E4F9F5",
+    },
+    {
+      id: 6,
+      name: "যে সমস্ত কারণে রোযা ভেঙ্গে যায়",
+      src: "/RojaVangarKaron",
+      color: "#E2E2DF",
+    },
+    {
+      id: 7,
+      name: "যে সব কারণে রোযা ভঙ্গ হয় না",
+      src: "/RojaNaVangarKaron",
+      color: "#FFDAC1",
+    },
+  ]
   return (
-    <div className="bg-[#e8e9f3] text-[#2e424d] px-[100px]">
-      <div className="py-10">
-        <h1 className="bg-[#98dad9] text-center py-5 my-5 rounded-md font-bold text-xl">
-          রমজানের ফাযায়েল
-        </h1>
-        <RojaFazael />
-      </div>
-      <div className="py-10">
-        <h1 className="bg-[#98dad9] text-center py-5 my-5 rounded-md font-bold text-xl">
-          তারাবীর নামায
-        </h1>
-        <Tarabih />
-      </div>
-      <div className="py-10">
-        <h1 className="bg-[#98dad9] text-center py-5 my-5 rounded-md font-bold text-xl">
-          সাহরী
-        </h1>
-        <Sahri />
-      </div>
-      <div className="py-10">
-        <h1 className="bg-[#98dad9] text-center py-5 my-5 rounded-md font-bold text-xl">
-          রোযার নিয়্যাত
-        </h1>
-        <RojarNiyat />
-      </div>
-      <div className="py-10">
-        <h1 className="bg-[#98dad9] text-center py-5 my-5 rounded-md font-bold text-xl">
-          ইফতার
-        </h1>
-        <Iftar />
-      </div>
-      <div className="py-10">
-        <h1 className="bg-[#98dad9] text-center py-5 my-5 rounded-md font-bold text-xl">
-          যে সমস্ত কারণে রোযা ভেঙ্গে যায়
-        </h1>
-        <RojaVangarKaron />
-      </div>
-      <div className="py-10">
-        <h1 className="bg-[#98dad9] text-center py-5 my-5 rounded-md font-bold text-xl">
-          যে সব কারণে রোযা ভঙ্গ হয় না
-        </h1>
-        <RojaNaVangarKaron />
-      </div>
+    <div className="grid grid-cols-1 md:grid-cols-3  font-bold mx-auto gap-5 p-5 bg-[#F7F3DE] text-[#2e424d] px-[100px]">
+      {roja.map((item) => (
+        <div key={item.id}>
+          <Link to={item.src}>
+            <div
+              style={{ backgroundColor: item.color || "#D7EAF8" }}
+              className="flex justify-center text-center items-center rounded-md h-[150px]"
+            >
+              <p className="text-3xl  hover:scale-125">{item.name}</p>
+            </div>
+          </Link>
+        </div>
+      ))}
     </div>
   );
 }

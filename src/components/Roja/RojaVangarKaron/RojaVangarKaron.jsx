@@ -2,7 +2,10 @@ import React from "react";
 
 function RojaVangarKaron() {
   return (
-    <div className="space-y-2 mb-5 text-xl">
+    <div className="relative text-xl bg-[#F7F3DE] text-[#2e424d] px-[100px] py-10 space-y-5">
+      <h1 className="bg-[#98dad9] text-center py-5 my-10 rounded-md font-bold text-xl">
+      যে সমস্ত কারণে রোযা ভেঙ্গে যায়
+      </h1>
       <p>
         রোযা অবস্থায় পানাহার ও যৌনাচার থেকে বিরত থাকা জরুরি, সুতরাং যদি কোন
         ব্যক্তি দিনের বেলায় ইচ্ছা করে উপরোল্লিখিত তিনটি কাজের যে কোন একটি কাজ

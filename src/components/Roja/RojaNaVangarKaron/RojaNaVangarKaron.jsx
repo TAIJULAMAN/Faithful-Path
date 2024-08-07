@@ -2,7 +2,10 @@ import React from "react";
 
 function RojaNaVangarKaron() {
   return (
-    <div className="space-y-2 mb-5 text-xl">
+    <div className="relative text-xl bg-[#F7F3DE] text-[#2e424d] px-[100px] py-10 space-y-5">
+      <h1 className="bg-[#98dad9] text-center py-5 my-10 rounded-md font-bold text-xl">
+      যে সব কারণে রোযা ভঙ্গ হয় না
+      </h1>
       <p>
         রোযা অবস্থায় প্রয়োজনবশত: ইনজেকশন বা স্যালাইন পুশ করা জায়িয আছে। এমনকি
         প্রয়োজনে গ্লুকোজ সাল্যাইনও পুশ করা যাবে। এর দ্বারা রোযার কোন ক্ষতি হবে

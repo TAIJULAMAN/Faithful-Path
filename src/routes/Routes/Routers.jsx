@@ -42,6 +42,13 @@ import NamajVongerKaron from "../../components/Namaz/NamajVongerKaron/NamajVonge
 import MohiladerNamaj from "../../components/Namaz/MohiladerNamaj/MohiladerNamaj";
 import NamazerForoz from "../../components/Namaz/NamazerForoz/NamazerForoz";
 import PuruserNamaj from "../../components/Namaz/PuruserNamaj/PuruserNamaj";
+import RojaFazael from "../../components/Roja/RojaFazael/RojaFazael";
+import Tarabih from "../../components/Roja/Tarabih/Tarabih";
+import Sahri from "../../components/Roja/Sahri/Sahri";
+import RojarNiyat from "../../components/Roja/RojarNiyat/RojarNiyat";
+import Iftar from "../../components/Roja/Iftar/Iftar";
+import RojaVangarKaron from "../../components/Roja/RojaVangarKaron/RojaVangarKaron";
+import RojaNaVangarKaron from "../../components/Roja/RojaNaVangarKaron/RojaNaVangarKaron";
 
 export const router = createBrowserRouter([
   {
@@ -215,6 +222,34 @@ export const router = createBrowserRouter([
       {
         path: "/namazerForoz",
         element: <NamazerForoz/>
+      },
+      {
+        path: "/RojaFazael",
+        element: <RojaFazael/>
+      },
+      {
+        path: "/Tarabih",
+        element: <Tarabih/>
+      },
+      {
+        path: "/Sahri",
+        element: <Sahri/> 
+      },
+      {
+        path: "/RojarNiyat",
+        element: <RojarNiyat/>
+      },
+      {
+        path: "/Iftar",
+        element: <Iftar/>
+      },
+      {
+        path: "/RojaVangarKaron",
+        element: <RojaVangarKaron/>
+      },
+      {
+        path: "/RojaNaVangarKaron",
+        element: <RojaNaVangarKaron/>
       },
     ],
   },

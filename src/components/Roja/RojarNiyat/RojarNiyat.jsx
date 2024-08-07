@@ -2,7 +2,10 @@ import React from "react";
 
 function RojarNiyat() {
   return (
-    <div className="space-y-2 mb-5 text-xl">
+    <div className="relative text-xl bg-[#F7F3DE] text-[#2e424d] px-[100px] py-10 space-y-5">
+    <h1 className="bg-[#98dad9] text-center py-5 my-10 rounded-md font-bold text-xl">
+    রোযার নিয়্যাত
+    </h1>
       <p>
         أَخْبَرَنِي الْقَاسِمُ بْنُ زَكَرِيَّا بْنِ دِينَارٍ، قَالَ حَدَّثَنَا
         سَعِيدُ بْنُ شُرَحْبِيلَ، قَالَ أَنْبَأَنَا اللَّيْثُ، عَنْ يَحْيَى بْنِ

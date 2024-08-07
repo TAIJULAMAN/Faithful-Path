@@ -2,7 +2,10 @@ import React from "react";
 
 function RojaFazael() {
   return (
-    <>
+    <div className="relative text-xl bg-[#F7F3DE] text-[#2e424d] px-[100px] py-10 space-y-5">
+      <h1 className="bg-[#98dad9] text-center py-5 my-10 rounded-md font-bold text-xl">
+      রমজানের ফাযায়েল
+      </h1>
       <div>
         <h1 className="text-xl font-bold mb-5">
           দিনের বেলা রোযা রাখাকে ফরজ করে পবিত্র কুরআনে বলা হয়েছে
@@ -38,7 +41,7 @@ function RojaFazael() {
           </p>
         </div>
       </div>
-    </>
+    </div>
   );
 }
 
