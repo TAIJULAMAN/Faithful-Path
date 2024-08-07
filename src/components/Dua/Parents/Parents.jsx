@@ -76,10 +76,13 @@ function Parents() {
       arabic: "اَللّٰهُمَّ أَلْقِهِ الْحِكْمَةَ وَالْعِلْمَ وَالْبَرَكَةْ",
       bangla: "আল্লাহুম্মা আলকিহিল হিকমাতা, অল এলমা অলবারাকাত।",
       meaning: "হে আল্লাহ আপনি তাকে হেকমত,জ্ঞান এবং বরকত দান করুন।",
-    }
+    },
   ];
   return (
-    <div className="relative text-xl">
+    <div className="relative text-xl bg-[#e8e9f3] text-[#2e424d] px-[100px] py-10">
+      <h1 className="bg-[#98dad9] text-center py-5 my-10 rounded-md font-bold text-xl">
+      পিতামাতা-সংসার-সন্তান
+      </h1>{" "}
       <ul className="space-y-2">
         {parents.map((data, id) => (
           <li

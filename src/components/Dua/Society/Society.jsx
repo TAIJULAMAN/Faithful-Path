@@ -59,11 +59,15 @@ function Society() {
       name: "কারো থেকে বিদায় নেয়ার সময়",
       arabic: "اَسْتَوْدِعُكُمُ اللهَ الَّذِيْ لَا تَضِيْعُ وَدَائِعُهٗ",
       bangla: "আস্তাউদি‘উ কুমুল্লাা হাললাযী লাা তাযী‘উ ওয়াদাা ই ‘উহূ।",
-      meaning: "আমি তোমাকে এমন সত্তার কাছে আমানত রেখে যাচ্ছি, যিনি তার আমানত কখনও নষ্ট করেন না।",
-    }
+      meaning:
+        "আমি তোমাকে এমন সত্তার কাছে আমানত রেখে যাচ্ছি, যিনি তার আমানত কখনও নষ্ট করেন না।",
+    },
   ];
   return (
-    <div className="relative text-xl">
+    <div className="relative text-xl bg-[#e8e9f3] text-[#2e424d] px-[100px] py-10">
+      <h1 className="bg-[#98dad9] text-center py-5 my-10 rounded-md font-bold text-xl">
+        সামাজিকতা
+      </h1>
       <ul className="space-y-2">
         {society.map((data, id) => (
           <li

@@ -15,7 +15,7 @@ import Voy from "../../components/Dua/Voy/Voy";
 import Storm from "../../components/Dua/Storm/Storm";
 import Durud from "../../components/Dua/Durud/Durud";
 import Istigfar from "../../components/Dua/Istigfar/Istigfar";
-import Rabbana from "../../components/Rabbana/Rabbana";
+import Rabbana from "../../components/Dua/Rabbana/Rabbana";
 import AllahHumma from "../../components/Dua/AllahHumma/AllahHumma";
 import Azan from "../../components/Dua/Azan/Azan";
 import Ozu from "../../components/Dua/Ozu/Ozu";
@@ -39,332 +39,170 @@ function Dua() {
     {
       id: 3,
       name: "বাসস্থান",
-      src: "/home",
-      color: "",
+      src: "/basa",
+      color: "#D3E0EA",
     },
     {
       id: 4,
       name: "পানাহার",
-      src: "",
-      color: "",
+      src: "/food",
+      color: "#FFE5B4",
     },
     {
       id: 5,
       name: "পাক পবিত্রতা",
-      src: "",
-      color: "",
+      src: "/pak",
+      color: "#E4F9F5",
     },
     {
       id: 6,
       name: "ঘুম",
-      src: "",
-      color: "",
+      src: "/sleep",
+      color: "#E2E2DF",
     },
     {
       id: 7,
       name: "সফর",
-      src: "",
-      color: "",
+      src: "/tour",
+      color: "#FFDAC1",
     },
     {
       id: 8,
       name: "সামাজিকতা",
-      src: "",
-      color: "",
+      src: "/society",
+      color: "#FFB7B2",
     },
     {
       id: 9,
       name: "পিতামাতা-সংসার-সন্তান",
-      src: "",
-      color: "",
+      src: "/parent",
+      color: "#C7CEEA",
     },
     {
       id: 10,
       name: "সাজ সজ্জা",
-      src: "",
-      color: "",
+      src: "/sajj",
+      color: "#FF9AA2",
     },
     {
       id: 11,
       name: "সুস্থতা-অসুস্থতা",
-      src: "",
-      color: "",
+      src: "/healthy",
+      color: "#B5EAD7",
     },
     {
       id: 12,
       name: "বিপদ বালা মুসিবত",
-      src: "",
-      color: "",
+      src: "/bipod",
+      color: "#C6DEFF",
     },
     {
       id: 13,
       name: "ভয়ভীতি",
-      src: "",
-      color: "",
+      src: "/voy",
+      color: "#E0BBE4",
     },
     {
       id: 14,
       name: "ঝড়-বৃষ্টি",
-      src: "",
-      color: "",
+      src: "/storm",
+      color: "#957DAD",
     },
     {
       id: 15,
       name: "দরুদ শরীফ",
-      src: "",
-      color: "",
+      src: "/durud",
+      color: "#D291BC",
     },
     {
       id: 16,
       name: "ইস্তিগ্‌ফার",
-      src: "",
-      color: "",
+      src: "/istigfar",
+      color: "#FEC8D8",
     },
     {
       id: 17,
       name: "রব্বানা",
-      src: "",
-      color: "",
+      src: "/rabbana",
+      color: "#FFDFD3",
     },
     {
       id: 18,
       name: "আল্লাহুম্মা",
-      src: "",
-      color: "",
+      src: "/allah",
+      color: "#F6D6AD",
     },
     {
       id: 19,
       name: "আজান",
-      src: "",
-      color: "",
+      src: "/azan",
+      color: "#FFD3B6",
     },
     {
       id: 20,
       name: "ওজু",
-      src: "",
-      color: "",
+      src: "/ozu",
+      color: "#E8A87C",
     },
     {
       id: 21,
       name: "মসজিদ",
-      src: "",
-      color: "",
+      src: "/mosjid",
+      color: "#C38D9E",
     },
     {
       id: 22,
       name: "নামাজের মধ্যে",
-      src: "",
-      color: "",
+      src: "/inamaz",
+      color: "#41B3A3",
     },
     {
       id: 23,
       name: "নামাজের শেষে",
-      src: "",
-      color: "",
+      src: "/onamaz",
+      color: "#E27D60",
     },
     {
       id: 24,
       name: "রমযান",
-      src: "",
-      color: "",
+      src: "/ramadan",
+      color: "#85DCB0",
     },
     {
       id: 25,
       name: "হজ্জ",
-      src: "",
-      color: "",
+      src: "/hajj",
+      color: "#E8A87C",
     },
     {
       id: 26,
       name: "ঈদ",
-      src: "",
-      color: "",
+      src: "/eid",
+      color: "#C38D9E",
     },
     {
       id: 27,
       name: "ঋণ",
-      src: "",
-      color: "",
+      src: "/loan",
+      color: "#41B3A3",
     },
   ];
+
   return (
     <div className="grid grid-cols-1 md:grid-cols-3  font-bold mx-auto gap-5 p-5 bg-[#F7F3DE] text-[#2e424d] px-[100px]">
       {dua.map((item) => (
         <div key={item.id}>
           <Link to={item.src}>
-            <div className="flex justify-center text-center items-center rounded-md bg-[#D7EAF8]  h-[150px]">
+            <div
+              style={{ backgroundColor: item.color || "#D7EAF8" }}
+              className="flex justify-center text-center items-center rounded-md h-[150px]"
+            >
               <p className="text-3xl  hover:scale-125">{item.name}</p>
             </div>
           </Link>
         </div>
       ))}
-      ;
     </div>
-
-    // <div className="bg-[#e8e9f3] text-[#2e424d] px-[100px]">
-    //   <div className="py-10">
-    //     <h1 className="bg-[#98dad9] text-center py-5 my-5 rounded-md font-bold text-xl">
-    //       ঈমানিয়্যাত
-    //     </h1>
-    //     <Imaniat />
-    //   </div>
-    //   <div className="py-10">
-    //     <h1 className="bg-[#98dad9] text-center py-5 my-5 rounded-md font-bold text-xl">
-    //       মৃত্যুর পূর্বাপর
-    //     </h1>
-    //     <BeforeDeath />
-    //   </div>
-    //   <div className="py-10">
-    //     <h1 className="bg-[#98dad9] text-center py-5 my-5 rounded-md font-bold text-xl">
-    //       বাসস্থান
-    //     </h1>
-    //     <Home />
-    //   </div>
-    //   <div className="py-10">
-    //     <h1 className="bg-[#98dad9] text-center py-5 my-5 rounded-md font-bold text-xl">
-    //       পানাহার
-    //     </h1>
-    //     <Food />
-    //   </div>
-    //   <div className="py-10">
-    //     <h1 className="bg-[#98dad9] text-center py-5 my-5 rounded-md font-bold text-xl">
-    //       পাক পবিত্রতা
-    //     </h1>
-    //     <Pak />
-    //   </div>
-    //   <div className="py-10">
-    //     <h1 className="bg-[#98dad9] text-center py-5 my-5 rounded-md font-bold text-xl">
-    //       ঘুম
-    //     </h1>
-    //     <Sleep />
-    //   </div>
-    //   <div className="py-10">
-    //     <h1 className="bg-[#98dad9] text-center py-5 my-5 rounded-md font-bold text-xl">
-    //       সফর
-    //     </h1>
-    //     <Tour />
-    //   </div>
-    //   <div className="py-10">
-    //     <h1 className="bg-[#98dad9] text-center py-5 my-5 rounded-md font-bold text-xl">
-    //       সামাজিকতা
-    //     </h1>
-    //     <Society />
-    //   </div>
-    //   <div className="py-10">
-    //     <h1 className="bg-[#98dad9] text-center py-5 my-5 rounded-md font-bold text-xl">
-    //       পিতামাতা-সংসার-সন্তান
-    //     </h1>
-    //     <Parents />
-    //   </div>
-    //   <div className="py-10">
-    //     <h1 className="bg-[#98dad9] text-center py-5 my-5 rounded-md font-bold text-xl">
-    //       সাজ সজ্জা
-    //     </h1>
-    //     <Sajj />
-    //   </div>
-    //   <div className="py-10">
-    //     <h1 className="bg-[#98dad9] text-center py-5 my-5 rounded-md font-bold text-xl">
-    //       সুস্থতা-অসুস্থতা
-    //     </h1>
-    //     <Healthy />
-    //   </div>
-    //   <div className="py-10">
-    //     <h1 className="bg-[#98dad9] text-center py-5 my-5 rounded-md font-bold text-xl">
-    //       বিপদ বালা মুসিবত
-    //     </h1>
-    //     <Bipod />
-    //   </div>
-    //   <div className="py-10">
-    //     <h1 className="bg-[#98dad9] text-center py-5 my-5 rounded-md font-bold text-xl">
-    //       ভয়ভীতি
-    //     </h1>
-    //     <Voy />
-    //   </div>
-    //   <div className="py-10">
-    //     <h1 className="bg-[#98dad9] text-center py-5 my-5 rounded-md font-bold text-xl">
-    //       ঝড়-বৃষ্টি
-    //     </h1>
-    //     <Storm />
-    //   </div>
-    //   <div className="py-10">
-    //     <h1 className="bg-[#98dad9] text-center py-5 my-5 rounded-md font-bold text-xl">
-    //       দরুদ শরীফ
-    //     </h1>
-    //     <Durud />
-    //   </div>
-    //   <div className="py-10">
-    //     <h1 className="bg-[#98dad9] text-center py-5 my-5 rounded-md font-bold text-xl">
-    //       ইস্তিগ্‌ফার
-    //     </h1>
-    //     <Istigfar />
-    //   </div>
-    //   <div className="py-10">
-    //     <h1 className="bg-[#98dad9] text-center py-5 my-5 rounded-md font-bold text-xl">
-    //       রব্বানা
-    //     </h1>
-    //     <Rabbana />
-    //   </div>
-    //   <div className="py-10">
-    //     <h1 className="bg-[#98dad9] text-center py-5 my-5 rounded-md font-bold text-xl">
-    //       আল্লাহুম্মা
-    //     </h1>
-    //     <AllahHumma />
-    //   </div>
-    //   <div className="py-10">
-    //     <h1 className="bg-[#98dad9] text-center py-5 my-5 rounded-md font-bold text-xl">
-    //       আজান
-    //     </h1>
-    //     <Azan />
-    //   </div>
-    //   <div className="py-10">
-    //     <h1 className="bg-[#98dad9] text-center py-5 my-5 rounded-md font-bold text-xl">
-    //       ওজু
-    //     </h1>
-    //     <Ozu />
-    //   </div>
-    //   <div className="py-10">
-    //     <h1 className="bg-[#98dad9] text-center py-5 my-5 rounded-md font-bold text-xl">
-    //       মসজিদ
-    //     </h1>
-    //     <Mosjid />
-    //   </div>
-    //   {/* <div className="py-10">
-    //     <h1 className="bg-[#98dad9] text-center py-5 my-5 rounded-md font-bold text-xl">
-    //       নামাজের মধ্যে
-    //     </h1>
-    //     <InNamaz />
-    //   </div> */}
-    //   {/* <div className="py-10">
-    //   <h1 className="bg-[#98dad9] text-center py-5 my-5 rounded-md font-bold text-xl">
-    //     নামাজের শেষে
-    //   </h1>
-    //   <OutNamaz />
-    // </div> */}
-    //   {/* <div className="py-10">
-    //   <h1 className="bg-[#98dad9] text-center py-5 my-5 rounded-md font-bold text-xl">
-    //     রমাযান
-    //   </h1>
-    //   <Ramadan />
-    // </div> */}
-    //   {/* <div className="py-10">
-    //   <h1 className="bg-[#98dad9] text-center py-5 my-5 rounded-md font-bold text-xl">
-    //     হজ্জ
-    //   </h1>
-    //   <Hajj />
-    // </div> */}
-    //   {/* <div className="py-10">
-    //   <h1 className="bg-[#98dad9] text-center py-5 my-5 rounded-md font-bold text-xl">
-    //     ঈদ
-    //   </h1>
-    //   <Eid />
-    // </div> */}
-    //   {/* <div className="py-10">
-    //   <h1 className="bg-[#98dad9] text-center py-5 my-5 rounded-md font-bold text-xl">
-    //     ঋণ
-    //   </h1>
-    //   <Loan />
-    // </div> */}
-    // </div>
   );
 }
 export default Dua;
