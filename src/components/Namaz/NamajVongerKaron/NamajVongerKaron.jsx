@@ -2,7 +2,10 @@ import React from "react";
 
 function NamajVongerKaron() {
   return (
-    <>
+    <div className="relative text-xl bg-[#F7F3DE] text-[#2e424d] px-[100px] py-10 space-y-5">
+      <h1 className="bg-[#98dad9] text-center py-5 my-10 rounded-md font-bold text-xl">
+        নামায ভঙ্গের কারণ
+      </h1>
       <h1 className="text-xl font-bold mb-5">নামায ভঙ্গের কারণ</h1>
       <div className="space-y-2 mb-5 text-xl">
         <p> ১. নামাযে অশুদ্ধ পড়া।</p>
@@ -28,7 +31,7 @@ function NamajVongerKaron() {
         <p>১৮. নামাযে খাওয়া বা পান করা।</p>
         <p> ১৯. ইমাম হতে এগিয়ে মুক্তাদির খাড়া হওয়া।</p>
       </div>
-    </>
+    </div>
   );
 }
 

@@ -35,6 +35,13 @@ import Hajj from "../../components/Dua/Hajj/Hajj";
 import Eid from "../../components/Dua/Eid/Eid";
 import Loan from "../../components/Dua/Loan/Loan";
 import Basa from "../../components/Dua/Home/Home";
+import PakPobitrota from "../../components/Namaz/PakPobitrota/PakPobitrota";
+import Time from "../../components/Namaz/Time/Time";
+import Fazael from "../../components/Namaz/Fazael/Fazael";
+import NamajVongerKaron from "../../components/Namaz/NamajVongerKaron/NamajVongerKaron";
+import MohiladerNamaj from "../../components/Namaz/MohiladerNamaj/MohiladerNamaj";
+import NamazerForoz from "../../components/Namaz/NamazerForoz/NamazerForoz";
+import PuruserNamaj from "../../components/Namaz/PuruserNamaj/PuruserNamaj";
 
 export const router = createBrowserRouter([
   {
@@ -180,6 +187,34 @@ export const router = createBrowserRouter([
       {
         path: "/loan",
         element: <Loan />,
+      },
+      {
+        path: "/pakPobitrota",
+        element: <PakPobitrota/>
+      },
+      {
+        path: "/time",
+        element: <Time/>
+      },
+      {
+        path: "/fazael",
+        element: <Fazael/>
+      },
+      {
+        path: "/namajVongerKaron",
+        element: <NamajVongerKaron/>
+      },
+      {
+        path: "/mohiladerNamaj",
+        element: <MohiladerNamaj/>
+      },
+      {
+        path: "/puruserNamaj",
+        element: <PuruserNamaj/>
+      },
+      {
+        path: "/namazerForoz",
+        element: <NamazerForoz/>
       },
     ],
   },

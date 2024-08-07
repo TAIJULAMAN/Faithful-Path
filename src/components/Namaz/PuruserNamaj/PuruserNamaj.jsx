@@ -2,7 +2,10 @@ import React from "react";
 
 function PuruserNamaj() {
   return (
-    <>
+    <div className="relative text-xl bg-[#F7F3DE] text-[#2e424d] px-[100px] py-10 space-y-5">
+      <h1 className="bg-[#98dad9] text-center py-5 my-10 rounded-md font-bold text-xl">
+        পুরুষদের নামায
+      </h1>
       <div>
         <h1 className="text-xl font-bold mb-5">দাঁড়ানোতে ৭ কাজ</h1>
         <div className="space-y-2 mb-5 text-xl">
@@ -26,7 +29,6 @@ function PuruserNamaj() {
           <p>৭. সিজদার জায়গার দিকে নজর রাখা।</p>
         </div>
       </div>
-
       <div>
         <h1 className="text-xl font-bold mb-5">হাত উঠানোতে ৮ কাজ</h1>
         <div className="space-y-2 mb-5 text-xl">
@@ -55,7 +57,6 @@ function PuruserNamaj() {
           </p>
         </div>
       </div>
-
       <div>
         <h1 className="text-xl font-bold mb-5">হাত বাঁধায় ৪ কাজ</h1>
         <div className="space-y-2 mb-5 text-xl">
@@ -266,7 +267,7 @@ function PuruserNamaj() {
           <p>৬. হাঁচি আসলে তা যথাসম্ভব দমিয়ে রাখা।</p>
         </div>
       </div>
-    </>
+    </div>
   );
 }
 
