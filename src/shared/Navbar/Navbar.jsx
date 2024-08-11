@@ -92,7 +92,7 @@ const Navbar = () => {
           </nav>
 
           <div className="hidden lg:flex">
-            <Link to="/">
+            <Link to="/donation">
               <button className="text-xl shadow-lg text-[#2e424d] font-semibold hover:bg-[#98dad9] bg-white px-5 py-3 rounded-md transition duration-300 ease-in-out">
                 ডোনেশন
               </button>

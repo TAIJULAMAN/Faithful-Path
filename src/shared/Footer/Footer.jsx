@@ -16,8 +16,8 @@ function Footer() {
       </p>
 
       <div className=" flex gap-4 items-center font-normal md:font-bold justify-center text-[#98dad9]">
-        <a href="" className="hover:text-red-400">
-          Home
+        <a href="/terms" className="hover:text-red-400">
+          শর্তাবলী
         </a>
         <a href="" className="hover:text-red-400">
           Blogs

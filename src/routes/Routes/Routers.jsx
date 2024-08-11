@@ -49,6 +49,8 @@ import RojarNiyat from "../../components/Roja/RojarNiyat/RojarNiyat";
 import Iftar from "../../components/Roja/Iftar/Iftar";
 import RojaVangarKaron from "../../components/Roja/RojaVangarKaron/RojaVangarKaron";
 import RojaNaVangarKaron from "../../components/Roja/RojaNaVangarKaron/RojaNaVangarKaron";
+import Donation from "../../pages/Donation/Donation";
+import Terms from "../../pages/Terms/Terms";
 
 export const router = createBrowserRouter([
   {
@@ -97,7 +99,7 @@ export const router = createBrowserRouter([
       },
       {
         path: "/basa",
-        element: <Basa/>
+        element: <Basa />,
       },
       {
         path: "/food",
@@ -197,59 +199,67 @@ export const router = createBrowserRouter([
       },
       {
         path: "/pakPobitrota",
-        element: <PakPobitrota/>
+        element: <PakPobitrota />,
       },
       {
         path: "/time",
-        element: <Time/>
+        element: <Time />,
       },
       {
         path: "/fazael",
-        element: <Fazael/>
+        element: <Fazael />,
       },
       {
         path: "/namajVongerKaron",
-        element: <NamajVongerKaron/>
+        element: <NamajVongerKaron />,
       },
       {
         path: "/mohiladerNamaj",
-        element: <MohiladerNamaj/>
+        element: <MohiladerNamaj />,
       },
       {
         path: "/puruserNamaj",
-        element: <PuruserNamaj/>
+        element: <PuruserNamaj />,
       },
       {
         path: "/namazerForoz",
-        element: <NamazerForoz/>
+        element: <NamazerForoz />,
       },
       {
         path: "/RojaFazael",
-        element: <RojaFazael/>
+        element: <RojaFazael />,
       },
       {
         path: "/Tarabih",
-        element: <Tarabih/>
+        element: <Tarabih />,
       },
       {
         path: "/Sahri",
-        element: <Sahri/> 
+        element: <Sahri />,
       },
       {
         path: "/RojarNiyat",
-        element: <RojarNiyat/>
+        element: <RojarNiyat />,
       },
       {
         path: "/Iftar",
-        element: <Iftar/>
+        element: <Iftar />,
       },
       {
         path: "/RojaVangarKaron",
-        element: <RojaVangarKaron/>
+        element: <RojaVangarKaron />,
       },
       {
         path: "/RojaNaVangarKaron",
-        element: <RojaNaVangarKaron/>
+        element: <RojaNaVangarKaron />,
+      },
+      {
+        path: "/donation",
+        element: <Donation/>
+      },
+      {
+        path: "/terms",
+        element: <Terms/>
       },
     ],
   },
