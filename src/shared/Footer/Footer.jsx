@@ -15,21 +15,15 @@ function Footer() {
         mdshahamanpatwary@gmail.com
       </p>
 
-      <div className=" flex gap-4 items-center font-normal md:font-bold justify-center text-[#98dad9]">
-        <a href="/terms" className="hover:text-red-400">
+      <div className=" flex gap-10 items-center font-normal md:font-bold justify-center text-2xl">
+        <a href="/terms" className="hover:text-[#98dad9]">
           শর্তাবলী
         </a>
-        <a href="" className="hover:text-red-400">
+        <a href="" className="hover:text-[#98dad9]">
           Blogs
         </a>
-        <a href="" className="hover:text-red-400">
-          About Us
-        </a>
-        <a href="" className="hover:text-red-400">
-          Privacy Policy
-        </a>
-        <a href="" className="hover:text-red-400">
-          Contact Us
+        <a href="/about" className="hover:text-[#98dad9]">
+          আমার সম্পর্কে
         </a>
       </div>
       <p className="pt-5">

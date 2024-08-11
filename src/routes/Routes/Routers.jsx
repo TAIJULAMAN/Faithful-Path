@@ -51,6 +51,8 @@ import RojaVangarKaron from "../../components/Roja/RojaVangarKaron/RojaVangarKar
 import RojaNaVangarKaron from "../../components/Roja/RojaNaVangarKaron/RojaNaVangarKaron";
 import Donation from "../../pages/Donation/Donation";
 import Terms from "../../pages/Terms/Terms";
+import About from "../../pages/About/About";
+import QuranDetails from "../../pages/Quran/QuranDetails";
 
 export const router = createBrowserRouter([
   {
@@ -255,17 +257,20 @@ export const router = createBrowserRouter([
       },
       {
         path: "/donation",
-        element: <Donation/>
+        element: <Donation />,
       },
       {
         path: "/terms",
-        element: <Terms/>
+        element: <Terms />,
+      },
+      {
+        path: "/about",
+        element: <About />,
+      },
+      {
+        path: "quran/:surah",
+        element: <QuranDetails />,
       },
     ],
   },
 ]);
-// {
-//     path: "/order/:category",
-//     // element:<OrderPage></OrderPage>
-//     element:<DuaDetails></DuaDetails>
-// },
