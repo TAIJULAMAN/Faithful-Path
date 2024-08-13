@@ -1,6 +1,21 @@
 import { useEffect, useState } from "react";
 import { useLocation } from "react-router-dom";
 
+
+// {
+//   "id": 1,
+//   "number": "১",
+//   "name": "আল-ফাতিহা",
+//   "means": "সূচনা",
+//   "arabic": "سُورَةُ ٱلْفَاتِحَةِ",
+//   "url": "Al-Fatihah",
+//   "english": "Al-Fatihah",
+//   "verse_num_en": 7,
+//   "verse_num_bn": "৭"
+// },  
+
+
+
 function QuranDetails() {
   const [surah, setSurah] = useState([]);
   const router = useLocation();
