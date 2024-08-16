@@ -54,6 +54,7 @@ import Terms from "../../pages/Terms/Terms";
 import About from "../../pages/About/About";
 import QuranDetails from "../../pages/Quran/QuranDetails";
 import DuaDetails from "../../pages/Dua/DuaDetails";
+import QuranDetails2 from "../../pages/Quran/QuranDetails2";
 
 export const router = createBrowserRouter([
   {
@@ -270,7 +271,7 @@ export const router = createBrowserRouter([
       },
       {
         path: "quran/:surah",
-        element: <QuranDetails />,
+        element: <QuranDetails2/>
       },
       {
         path: "dua/:dua",

@@ -1,20 +1,8 @@
 import React from "react";
 import { useEffect, useState } from "react";
-import { useLocation } from "react-router-dom";
 
 function DuaDetails() {
-  const [dua, setDua] = useState([]);
-  const router = useLocation();
-  const pathName = router?.pathname;
-  const duaName = pathName.split("/").pop();
-  console.log(duaName)
 
-  useEffect(() => {
-    const jsonPath = `../../public/Dua/Dua/${duaName}.json`;
-    fetch(jsonPath)
-      .then((response) => response.json())
-      .then((data) => setDua(data));
-  }, [duaName]);
   return (
     <div className="relative text-xl bg-[#e8e9f3] text-[#2e424d] px-[100px] py-10">
       <h1 className="bg-[#98dad9] text-center py-5 my-10 rounded-md font-bold text-xl">

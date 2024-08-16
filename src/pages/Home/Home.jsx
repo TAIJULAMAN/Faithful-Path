@@ -2,6 +2,7 @@ import React from "react";
 import { Helmet } from 'react-helmet-async';
 import SliderBanner from "../../components/SliderBanner/SliderBanner";
 import Donation from "../Donation/Donation";
+import QuranDetails2 from "../Quran/QuranDetails2";
 
 
 function Home() {
@@ -11,7 +12,8 @@ function Home() {
         <title>Faithful Path | Home</title>
         </Helmet>
        {/* <SliderBanner/> */}
-       <Donation/>
+       {/* <Donation/> */}
+       <QuranDetails2/> 
     </div>
   );
 }
