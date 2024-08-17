@@ -3,10 +3,10 @@ import HadithBangla from "../../../public/Data/HadithBangla.json";
 
 function Hadith() {
   return (
-    <div className="relative text-xl bg-[#f8ebd5] text-[#2e424d] px-[100px] py-10">
-      <h1 className="bg-[#e49733] text-[#2e424d] text-center py-5 my-10 rounded-md font-bold text-2xl">
+    <div className="relative text-xl bg-[#f8ebd5] text-[#2e424d] px-[100px] py-5">
+      {/* <h1 className="bg-[#e49733] text-[#2e424d] text-center py-5 my-10 rounded-md font-bold text-2xl">
         হাদিস
-      </h1>
+      </h1> */}
       <ul className="space-y-2">
         {HadithBangla.map((data) => (
           <li
