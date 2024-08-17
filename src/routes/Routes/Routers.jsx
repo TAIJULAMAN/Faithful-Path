@@ -53,6 +53,15 @@ import Donation from "../../pages/Donation/Donation";
 import Terms from "../../UnUsed/Terms/Terms";
 import QuranDetails from "../../pages/Quran/QuranDetails";
 import Snamaz from "../../components/Sunnah/Namaz/Namaz";
+import MosjideProvesh from "../../components/Sunnah/Mosjid/MosjideProvesh/MosjideProvesh";
+import MosjidThekeBer from "../../components/Sunnah/Mosjid/MosjidThekeBer/MosjidThekeBer";
+import Toilet from "../../components/Sunnah/Toilet/Toilet";
+import Ozus from "../../components/Sunnah/Ozu/Ozu";
+import Gosol from "../../components/Sunnah/Gosol/Gosol";
+import Sleeps from "../../components/Sunnah/Sleep/Sleep";
+import Tayammum from "../../components/Sunnah/Tayammum/Tayammum";
+import AfterSleeps from "../../components/Sunnah/AfterSleep/AfterSleep";
+import Foods from "../../components/Sunnah/Food/Food";
 
 export const router = createBrowserRouter([
   {
@@ -271,7 +280,42 @@ export const router = createBrowserRouter([
         path: "/snamaz",
         element: <Snamaz/>
       },
-    
+      {
+        path: "/mosjideProvesh",
+        element: <MosjideProvesh/>
+      },
+      {
+        path: "/mosjidThekeBer",
+        element: <MosjidThekeBer/>
+      },
+      {
+        path: "/stoilet",
+        element: <Toilet/>
+      },
+      {
+        path: "/sozu",
+        element: <Ozus/>
+      },
+      {
+        path: "/sgosol",
+        element: <Gosol/>
+      },
+      {
+        path: "/sleeps",
+        element: <Sleeps/>
+      },
+      {
+        path: "/taiammums",
+        element: <Tayammum/>
+      },
+      {
+        path: "/asleep",
+        element: <AfterSleeps/>
+      },
+      {
+        path: "/sfood",
+        element: <Foods/>
+      },
     ],
   },
 ]);

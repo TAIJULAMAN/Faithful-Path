@@ -1,4 +1,5 @@
 import React from "react";
+import { IoMdReturnRight } from "react-icons/io";
 
 function Snamaz() {
   const item = [
@@ -213,7 +214,7 @@ function Snamaz() {
         <h1 className=" text-[#2e424d] text-center  font-bold text-2xl">
           নামাজ
         </h1>
-        <button>return</button>
+        <IoMdReturnRight size={40} />
       </div>
       <div className="relative">
         <ul className="grid gap-8 sm:grid-cols-1 lg:grid-cols-2">

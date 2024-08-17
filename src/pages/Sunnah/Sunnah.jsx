@@ -11,48 +11,47 @@ function Sunnah() {
     {
       id: 2,
       name: "মসজিদে প্রবেশ করা",
-      src: "/before",
+      src: "/mosjideProvesh",
     },
     {
       id: 3,
       name: "মসজিদ থেকে বের হওয়া",
-      src: "/basa",
+      src: "/mosjidThekeBer",
     },
     {
       id: 4,
       name: "টয়লেট / ইস্তিঞ্জা",
-      src: "/food",
+      src: "/stoilet",
     },
     {
       id: 5,
       name: "ওযু",
-      src: "/pak",
-      color: "#E4F9F5",
+      src: "/sozu",
     },
     {
       id: 6,
       name: "গোসল",
-      src: "/sleep",
+      src: "/sgosol",
     },
     {
       id: 7,
       name: "তায়াম্মুম",
-      src: "/tour",
+      src: "/taiammums",
     },
     {
       id: 8,
       name: "ঘুমানো",
-      src: "/society",
+      src: "/sleeps",
     },
     {
       id: 9,
       name: "ঘুম থেকে ওঠা",
-      src: "/parent",
+      src: "/asleep",
     },
     {
       id: 10,
       name: "খানা খাওয়া",
-      src: "/sajj",
+      src: "/sfood",
     },
     {
       id: 11,

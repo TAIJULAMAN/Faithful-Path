@@ -1,7 +1,8 @@
 import React from "react";
+import { IoMdReturnRight } from "react-icons/io";
 
-function Sleep() {
-  const sleep = [
+function Sleeps() {
+  const item = [
     {
       id: 1,
       desc: " ডান হাত ডান গালের নিচে রেখে ঘুমানো।",
@@ -45,14 +46,17 @@ function Sleep() {
   ];
 
   return (
-    <section className="text-[#2e424d]">
+    <section className="text-[#2e424d] px-[100px] py-10 text-xl bg-[#f8ebd5]">
+      <div className="bg-[#e49733] py-5 flex justify-between my-10 rounded-md px-10">
+        <h1 className=" text-[#2e424d] text-center  font-bold text-2xl">
+        ঘুমানো
+        </h1>
+        <IoMdReturnRight size={40} />
+      </div>
       <div className="relative">
         <ul className="grid gap-8 sm:grid-cols-1 lg:grid-cols-2">
-          {sleep.map((data, id) => (
-            <li
-              key={id}
-              className="space-y-3 p-4 border border-[#a6a6a8] rounded-lg"
-            >
+          {item.map((data, index) => (
+            <li key={index} className="space-y-3 p-4 border border-[#e49733]">
               <p>{data.desc}</p>
             </li>
           ))}
@@ -62,4 +66,4 @@ function Sleep() {
   );
 }
 
-export default Sleep;
+export default Sleeps;

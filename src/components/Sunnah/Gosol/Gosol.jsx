@@ -1,7 +1,8 @@
 import React from "react";
+import { IoMdReturnRight } from "react-icons/io";
 
 function Gosol() {
-  const gosol = [
+  const item = [
     {
       id: 1,
       desc: "ফরজ গোসলের পূর্বে ইস্তিঞ্জা অর্থাৎ পেশাব করা।",
@@ -52,14 +53,17 @@ function Gosol() {
     },
   ];
   return (
-    <section className="text-[#2e424d]">
+    <section className="text-[#2e424d] px-[100px] py-10 text-xl bg-[#f8ebd5]">
+      <div className="bg-[#e49733] py-5 flex justify-between my-10 rounded-md px-10">
+        <h1 className=" text-[#2e424d] text-center  font-bold text-2xl">
+          গোসল
+        </h1>
+        <IoMdReturnRight size={40} />
+      </div>
       <div className="relative">
         <ul className="grid gap-8 sm:grid-cols-1 lg:grid-cols-2">
-          {gosol.map((data, id) => (
-            <li
-              key={id}
-              className="space-y-3 p-4 border border-[#a6a6a8] rounded-lg"
-            >
+          {item.map((data, index) => (
+            <li key={index} className="space-y-3 p-4 border border-[#e49733]">
               <p>{data.desc}</p>
             </li>
           ))}
