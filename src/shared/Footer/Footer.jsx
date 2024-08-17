@@ -2,7 +2,7 @@ import React from "react";
 
 function Footer() {
   return (
-    <div className="text-[#2e424d] bg-[#F7F3DE] px-10 pt-16 pb-10 text-center min-h-full">
+    <div className="text-[#2e424d] px-10 pt-16 pb-10 text-center bg-[#f8ebd5]">
       <p className=" ">
         "এটি একটি ওয়েবসাইট যা বাংলাদেশের মানুষকে ইসলামের শিক্ষা সম্পর্কে সচেতন
         করার মহৎ উদ্দেশ্য নিয়ে চালু করা হয়েছে। এই প্ল্যাটফর্মের বিকাশের পিছনে

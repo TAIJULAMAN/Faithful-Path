@@ -271,12 +271,12 @@ export const router = createBrowserRouter([
       },
       {
         path: "quran/:surah",
-        element: <QuranDetails2/>
+        element: <QuranDetails/>
       },
-      {
-        path: "dua/:dua",
-        element: <DuaDetails/>
-      },
+      // {
+      //   path: "dua/:dua",
+      //   element: <DuaDetails/>
+      // },
     ],
   },
 ]);

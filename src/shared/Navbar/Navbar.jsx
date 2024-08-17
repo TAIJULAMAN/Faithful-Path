@@ -14,7 +14,7 @@ const Navbar = () => {
   };
 
   return (
-    <div className="sticky z-10 w-full text-[#2e424d] bg-[#F7F3DE] px-[100px] shadow-lg">
+    <div className="sticky z-10 w-full text-[#2e424d] px-[100px] bg-[#f8ebd5]">
       <div>
         <div className=" flex flex-row justify-between py-8">
           <div className=" flex flex-row items-center cursor-pointer">

@@ -49,11 +49,10 @@ li {
 	font-style: normal;
 	font-variation-settings: "wdth" 100;
 }
-/* color manage  */
 
 :root {
 	--primary__color: #e49733;
-	--bg__body__home: #f8ebd5;
+	--bg__body: #f8ebd5;
 	--bg__surah__card: #fff5e4;
 	--bg__tab: #efe2cd;
 	--text__title: #423000;
@@ -61,15 +60,6 @@ li {
 	--border__color: rgb(100 116 139 / 0.1);
 }
 
-.theme__dark__mode {
-	--primary__color: rgb(56, 189, 248);
-	--bg__body__home: rgb(15, 23, 42);
-	--bg__surah__card: rgba(43, 48, 58, 0.4);
-	--bg__tab: rgba(0, 0, 0, 0.103);
-	--text__title: #beccdf;
-	--text__sub__title: #94a3b8;
-	--border__color: rgba(70, 84, 104, 0.322);
-}
 
 body {
 	color: var(--text__title);
@@ -154,23 +144,4 @@ body {
 .my__container {
 	width: 100%;
 }
-/* 
-@media (min-width: 1024px) {
-	.my__container {
-		max-width: 970px;
-		padding-left: 40px;
-		padding-right: 40px;
-	}
 
-	.logo-img {
-		width: 168px;
-		padding: 0;
-	}
-} */
-/* @media (min-width: 1260px) {
-	.my__container {
-		max-width: 1350px;
-		padding-left: 80px;
-		padding-right: 80px;
-	}
-} */
