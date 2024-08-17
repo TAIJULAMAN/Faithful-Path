@@ -34,5 +34,4 @@ To run this project locally, follow these steps:
 1. **Clone the repository:**
   
    https://github.com/TAIJULAMAN/Faithful-Path.git
-   cd faithful-path
  
