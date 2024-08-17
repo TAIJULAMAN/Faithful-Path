@@ -2,8 +2,10 @@ import React from "react";
 
 function Terms() {
   return (
-    <div className="bg-[#F7F3DE] text-[#2e424d] px-[100px] py-10 text-xl">
-      <h1 className="bg-[#98dad9] text-center py-5 rounded-md font-bold text-2xl">
+    <div
+      className="bg-[#f8ebd5] text-[#2e424d] px-[100px] py-10 text-xl"
+    >
+      <h1 className="bg-[#e49733] text-[#2e424d] text-center py-5 my-10 rounded-md font-bold text-2xl">
         শর্তাবলী
       </h1>
       <div className="space-y-5 py-10">

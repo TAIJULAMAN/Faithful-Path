@@ -19,12 +19,6 @@ function Footer() {
         <a href="/terms" className="hover:text-[#98dad9]">
           শর্তাবলী
         </a>
-        <a href="" className="hover:text-[#98dad9]">
-          Blogs
-        </a>
-        <a href="/about" className="hover:text-[#98dad9]">
-          আমার সম্পর্কে
-        </a>
       </div>
       <p className="pt-5">
         {"\u00a9"} {new Date().getFullYear()} বিশ্বস্ত পথ ।

@@ -50,6 +50,7 @@ import Iftar from "../../components/Roja/Iftar/Iftar";
 import RojaVangarKaron from "../../components/Roja/RojaVangarKaron/RojaVangarKaron";
 import RojaNaVangarKaron from "../../components/Roja/RojaNaVangarKaron/RojaNaVangarKaron";
 import Donation from "../../pages/Donation/Donation";
+import Terms from "../../UnUsed/Terms/Terms";
 import QuranDetails from "../../pages/Quran/QuranDetails";
 
 export const router = createBrowserRouter([
@@ -258,9 +259,14 @@ export const router = createBrowserRouter([
         element: <Donation />,
       },
       {
-        path: "quran/:surah",
-        element: <QuranDetails />,
+        path: "/terms",
+        element: <Terms />,
       },
+      {
+        path: "quran/:surah",
+        element: <QuranDetails/>
+      },
+    
     ],
   },
 ]);

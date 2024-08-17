@@ -7,7 +7,9 @@ function Home() {
       <Helmet>
         <title>Faithful Path | Home</title>
       </Helmet>
-      <SliderBanner />
+      <div>
+        <h1>Home sweet home</h1>
+      </div>
     </div>
   );
 }
