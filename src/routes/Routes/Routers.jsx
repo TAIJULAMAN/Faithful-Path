@@ -62,6 +62,19 @@ import Sleeps from "../../components/Sunnah/Sleep/Sleep";
 import Tayammum from "../../components/Sunnah/Tayammum/Tayammum";
 import AfterSleeps from "../../components/Sunnah/AfterSleep/AfterSleep";
 import Foods from "../../components/Sunnah/Food/Food";
+import Drink from "../../components/Sunnah/Drink/Drink";
+import Ramadans from "../../components/Sunnah/Ramadan/Ramadan";
+import Sehri from "../../components/Sunnah/Sehri/Sehri";
+import Iftars from "../../components/Sunnah/Iftar/Iftar";
+import Rojas from "../../components/Sunnah/Roja/Roja";
+import Eids from "../../components/Sunnah/Eid/Eid";
+import Korbani from "../../components/Sunnah/Korbani/Korbani";
+import Dress from "../../components/Sunnah/Dress/Dress";
+import Tours from "../../components/Sunnah/Tour/Tour";
+import Marry from "../../components/Sunnah/Marry/Marry";
+import Jumma from "../../components/Sunnah/Jumma/Jumma";
+import Homes from "../../components/Sunnah/Home/Home";
+import Hair from "../../components/Sunnah/Hair/Hair";
 
 export const router = createBrowserRouter([
   {
@@ -315,6 +328,58 @@ export const router = createBrowserRouter([
       {
         path: "/sfood",
         element: <Foods/>
+      },
+      {
+        path: "/sdrink",
+        element: <Drink/>
+      },
+      {
+        path: "/sram",
+        element: <Ramadans/>
+      },
+      {
+        path: "/ssehri",
+        element: <Sehri/>
+      },
+      {
+        path: "/siftar",
+        element: <Iftars/>
+      },
+      {
+        path: "/sroja",
+        element: <Rojas/>
+      },
+      {
+        path: "/seid",
+        element: <Eids/>
+      },
+      {
+        path: "/skor",
+        element: <Korbani/>
+      },
+      {
+        path: "/sdes",
+        element: <Dress/>
+      },
+      {
+        path: "/str",
+        element: <Tours/>
+      },
+      {
+        path: "/smr",
+        element: <Marry/>
+      },
+      {
+        path: "/sjm",
+        element: <Jumma/>
+      },
+      {
+        path: "/shm",
+        element: <Homes/>
+      },
+      {
+        path: "/hairs",
+        element: <Hair/>
       },
     ],
   },

@@ -56,63 +56,67 @@ function Sunnah() {
     {
       id: 11,
       name: "পান করা",
-      src: "/healthy",
+      src: "/sdrink",
     },
     {
       id: 12,
       name: "রামাদান",
-      src: "/bipod",
+      src: "/sram",
     },
     {
       id: 13,
       name: "সাহরি",
-      src: "/voy",
+      src: "/ssehri",
     },
     {
       id: 14,
       name: "ইফতার",
-      src: "/storm",
+      src: "/siftar",
     },
     {
       id: 15,
       name: "রোযার আদব",
-      src: "/durud",
-      color: "#D291BC",
+      src: "/sroja",
     },
     {
       id: 16,
       name: "ঈদের দিনের সুন্নত ও আদব",
-      src: "/istigfar",
+      src: "/seid",
     },
     {
       id: 17,
       name: "কুরবানী",
-      src: "/rabbana",
+      src: "/skor",
     },
     {
       id: 18,
       name: "পোশাক",
-      src: "/allah",
+      src: "/sdes",
     },
     {
       id: 19,
       name: "সফর",
-      src: "/azan",
+      src: "/str",
     },
     {
       id: 20,
       name: "বিবাহ",
-      src: "/ozu",
+      src: "/smr",
     },
     {
       id: 21,
       name: "জুম'আর দিন",
-      src: "/mosjid",
+      src: "/sjm",
     },
     {
       id: 22,
       name: "ঘরে প্রবেশ",
-      src: "/inamaz",
+      src: "/shm",
+    },
+    {
+      id: 22,
+      name: "চুল",
+      src: "/hairs",
     },
   ];
   return (

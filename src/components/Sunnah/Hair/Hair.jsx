@@ -1,7 +1,8 @@
 import React from "react";
+import { IoMdReturnRight } from "react-icons/io";
 
 function Hair() {
-  const hair = [
+  const item = [
     {
       id: 1,
       desc: "রাসূল (ﷺ) এর মাথার চুলের দৈর্ঘ এক বর্ণনা অনুযায়ী কানের মাঝখান পর্যন্ত এবং অন্য বর্ণনা অনুযায়ী কাধ পর্যন্ত এবং অপর বর্ণনা মোতাবেক কানের লতি পর্যন্ত ছিল।",
@@ -33,17 +34,18 @@ function Hair() {
     {
       id: 8,
       desc: "আয়না দেখার সময় এই দোয়া পড়া- اللهم حسنت خلقي فحسن خلقی অর্থ: হে আল্লাহ আপনি আমার যেরুপ সুন্দও চেহারা দান করেছেন তদ্রুপ আমার স্বভাব-চরিত্রকেও সুন্দর করে দিন।",
-    }
+    },
   ];
   return (
-    <section className="text-[#2e424d]">
+    <section className="text-[#2e424d] px-[100px] py-10 text-xl bg-[#f8ebd5]">
+      <div className="bg-[#e49733] py-5 flex justify-between my-10 rounded-md px-10">
+        <h1 className=" text-[#2e424d] text-center  font-bold text-2xl">চুল</h1>
+        <IoMdReturnRight size={40} />
+      </div>
       <div className="relative">
         <ul className="grid gap-8 sm:grid-cols-1 lg:grid-cols-2">
-          {hair.map((data, id) => (
-            <li
-              key={id}
-              className="space-y-3 p-4 border border-[#a6a6a8] rounded-lg"
-            >
+          {item.map((data, index) => (
+            <li key={index} className="space-y-3 p-4 border border-[#e49733]">
               <p>{data.desc}</p>
             </li>
           ))}
