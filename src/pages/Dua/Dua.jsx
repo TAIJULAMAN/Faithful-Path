@@ -1,7 +1,5 @@
 import React from "react";
 import { Link } from "react-router-dom";
-// import duaInfo from "../../../public/Dua/duaInfo.json";
-
 function Dua() {
   const dua = [
     {
@@ -167,7 +165,6 @@ function Dua() {
       color: "#41B3A3",
     },
   ];
-
   return (
     <div className=" grid grid-cols-1 md:grid-cols-3  font-bold mx-auto gap-5 p-5 bg-[#f8ebd5] text-[#2e424d] px-[100px]">
       {dua.map((item) => (
