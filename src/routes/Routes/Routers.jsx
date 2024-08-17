@@ -50,11 +50,7 @@ import Iftar from "../../components/Roja/Iftar/Iftar";
 import RojaVangarKaron from "../../components/Roja/RojaVangarKaron/RojaVangarKaron";
 import RojaNaVangarKaron from "../../components/Roja/RojaNaVangarKaron/RojaNaVangarKaron";
 import Donation from "../../pages/Donation/Donation";
-import Terms from "../../pages/Terms/Terms";
-import About from "../../pages/About/About";
 import QuranDetails from "../../pages/Quran/QuranDetails";
-import DuaDetails from "../../pages/Dua/DuaDetails";
-import QuranDetails2 from "../../pages/Quran/QuranDetails2";
 
 export const router = createBrowserRouter([
   {
@@ -262,21 +258,9 @@ export const router = createBrowserRouter([
         element: <Donation />,
       },
       {
-        path: "/terms",
-        element: <Terms />,
-      },
-      {
-        path: "/about",
-        element: <About />,
-      },
-      {
         path: "quran/:surah",
-        element: <QuranDetails/>
+        element: <QuranDetails />,
       },
-      // {
-      //   path: "dua/:dua",
-      //   element: <DuaDetails/>
-      // },
     ],
   },
 ]);
