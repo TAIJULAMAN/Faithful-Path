@@ -2,8 +2,8 @@ import React from "react";
 
 function RojarNiyat() {
   return (
-    <div className="relative text-xl bg-[#F7F3DE] text-[#2e424d] px-[100px] py-10 space-y-5">
-    <h1 className="bg-[#98dad9] text-center py-5 my-10 rounded-md font-bold text-xl">
+    <div className="relative text-xl bg-[#f8ebd5] text-[#2e424d] px-[100px] py-20 space-y-5">
+    <h1 className="bg-[#e49733] text-[#2e424d] text-center py-5 my-10 rounded-md font-bold text-2xl">
     রোযার নিয়্যাত
     </h1>
       <p>

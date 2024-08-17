@@ -12,7 +12,7 @@ function Roja() {
     {
       id: 2,
       name: "তারাবীর নামায",
-      src: "/time",
+      src: "/tarabih",
       color: "#EFCDCC",
     },
     {
