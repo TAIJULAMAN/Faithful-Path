@@ -8,7 +8,7 @@ function Home() {
         <title>Faithful Path | Home</title>
       </Helmet>
       <div>
-        <h1>Few more works is remaining.</h1>
+        <h1>Few more works is remaining.Soooooonnnn......</h1>
       </div>
     </div>
   );
