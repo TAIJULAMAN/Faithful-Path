@@ -1,7 +1,7 @@
 import React from "react";
 
 function AfterSleep() {
-  const AfterSleep = [
+  const item = [
     {
       id: 1,
       desc: "ঘুম থেকে উঠেই উভয় হাত দ্বারা মুখমন্ডল এবং চক্ষুদ্বয়কে হালকাভাবে মর্দন করা, যাতে ঘুমের ভাব দূর হয়ে যায়।",
@@ -23,10 +23,10 @@ function AfterSleep() {
     <section className="text-[#2e424d]">
       <div className="relative">
         <ul className="grid gap-8 sm:grid-cols-1 lg:grid-cols-2">
-          {AfterSleep.map((data, id) => (
+          {item.map((data, id) => (
             <li
               key={id}
-              className="space-y-3 p-4 border border-[#a6a6a8] rounded-lg"
+              className="space-y-3 p-4"
             >
               <p>{data.desc}</p>
             </li>

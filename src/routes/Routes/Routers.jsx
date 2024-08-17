@@ -52,6 +52,7 @@ import RojaNaVangarKaron from "../../components/Roja/RojaNaVangarKaron/RojaNaVan
 import Donation from "../../pages/Donation/Donation";
 import Terms from "../../UnUsed/Terms/Terms";
 import QuranDetails from "../../pages/Quran/QuranDetails";
+import Snamaz from "../../components/Sunnah/Namaz/Namaz";
 
 export const router = createBrowserRouter([
   {
@@ -265,6 +266,10 @@ export const router = createBrowserRouter([
       {
         path: "quran/:surah",
         element: <QuranDetails/>
+      },
+      {
+        path: "/snamaz",
+        element: <Snamaz/>
       },
     
     ],

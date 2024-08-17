@@ -6,7 +6,7 @@ function Sunnah() {
     {
       id: 1,
       name: "নামাজ",
-      src: "/imaniat",
+      src: "/snamaz",
     },
     {
       id: 2,

@@ -1,7 +1,7 @@
 import React from "react";
 
-function Namaz() {
-  const namazSunnah = [
+function Snamaz() {
+  const item = [
     {
       id: 1,
       desc: "উভয় পায়ের আঙ্গুল সমূহ কিবলামুখী রাখা এবং উভয় পায়ের মাঝখানে চার আঙ্গুল; ঊর্ধ্বে এক বিঘত পরিমান ফাঁকা রাখা।",
@@ -208,14 +208,17 @@ function Namaz() {
     },
   ];
   return (
-    <section className="text-[#2e424d]">
+    <section className="text-[#2e424d] px-[100px] py-10 text-xl bg-[#f8ebd5]">
+      <div className="bg-[#e49733] py-5 flex justify-between my-10 rounded-md px-10">
+        <h1 className=" text-[#2e424d] text-center  font-bold text-2xl">
+          নামাজ
+        </h1>
+        <button>return</button>
+      </div>
       <div className="relative">
         <ul className="grid gap-8 sm:grid-cols-1 lg:grid-cols-2">
-          {namazSunnah.map((data, id) => (
-            <li
-              key={id}
-              className="space-y-3 p-4 border border-[#a6a6a8] rounded-lg"
-            >
+          {item.map((data, index) => (
+            <li key={index} className="space-y-3 p-4 border border-[#e49733]">
               <p>{data.desc}</p>
             </li>
           ))}
@@ -225,4 +228,4 @@ function Namaz() {
   );
 }
 
-export default Namaz;
+export default Snamaz;
