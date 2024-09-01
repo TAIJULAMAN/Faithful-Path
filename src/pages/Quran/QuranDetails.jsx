@@ -5,13 +5,19 @@ function QuranDetails() {
   const [surah, setSurah] = useState([]);
   const router = useLocation();
   const pathName = router?.pathname;
+  console.log(pathName);
   const surahName = pathName.split("/").pop();
+  console.log(surahName);
 
   useEffect(() => {
-    const jsonPath = `../../public/Quran/surah/${surahName}.json`;
+    const jsonPath =`../../public/Quran/surah/${surahName}.json`;
+    console.log(jsonPath);
     fetch(jsonPath)
       .then((response) => response.json())
-      .then((data) => setSurah(data));
+      .then((data) => {
+        console.log(data);
+        setSurah(data);
+      });
   }, [surahName]);
 
   return (
@@ -31,4 +37,4 @@ function QuranDetails() {
   );
 }
 
-export default QuranDetails;
+export default QuranDetails;

@@ -47,7 +47,7 @@ function Roja() {
     },
   ];
   return (
-    <div className="grid grid-cols-1 md:grid-cols-3  font-bold mx-auto gap-5 py-28 bg-[#f8ebd5]  text-[#2e424d] px-[100px]">
+    <div className="grid grid-cols-1 md:grid-cols-3 min-h-fit mx-auto gap-5 py-10 bg-[#f8ebd5]  text-[#2e424d] px-[100px]">
       {roja.map((item) => (
         <div key={item.id}>
           <Link to={item.src}>

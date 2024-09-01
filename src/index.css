@@ -3,145 +3,144 @@
 @tailwind utilities;
 
 * {
-	margin: 0;
-	padding: 0;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
 }
 
 /* font family customize  */
 
 @font-face {
-	font-family: "Quran";
-	src: url("./Fonts/UthmanicHafs1Ver18.woff2") format("woff2");
-	font-weight: 300;
-	font-style: normal;
+  font-family: "Quran";
+  src: url("./Fonts/UthmanicHafs1Ver18.woff2") format("woff2");
+  font-weight: 300;
+  font-style: normal;
 }
 
 h1 {
-	color: var(--primary__color);
-	font-family: "Hind Siliguri", sans-serif;
-	font-weight: 600;
-	font-style: normal;
+  color: var(--primary__color);
+  font-family: "Hind Siliguri", sans-serif;
+  font-weight: 600;
+  font-style: normal;
 }
 h2 {
-	font-family: "Hind Siliguri", sans-serif;
-	font-weight: 600;
-	font-style: normal;
+  font-family: "Hind Siliguri", sans-serif;
+  font-weight: 600;
+  font-style: normal;
 }
 .Noto__Naskh__Arabic {
-	font-family: "Noto Naskh Arabic", serif;
-	font-optical-sizing: auto;
-	font-weight: 400;
-	font-style: normal;
+  font-family: "Noto Naskh Arabic", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
 }
 h3 {
-	font-family: "Quran";
+  font-family: "Quran";
 }
 h4,
 span {
-	font-family: "Hind Siliguri", sans-serif;
-	font-weight: 400;
-	font-style: normal;
+  font-family: "Hind Siliguri", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 li {
-	font-family: "Noto Sans Bengali", sans-serif;
-	font-optical-sizing: auto;
-	font-weight: 400;
-	font-style: normal;
-	font-variation-settings: "wdth" 100;
+  font-family: "Noto Sans Bengali", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
 }
 
 :root {
-	--primary__color: #e49733;
-	--bg__body: #f8ebd5;
-	--bg__surah__card: #fff5e4;
-	--bg__tab: #efe2cd;
-	--text__title: #423000;
-	--text__sub__title: #524f38;
-	--border__color: rgb(100 116 139 / 0.1);
+  --primary__color: #e49733;
+  --bg__body: #f8ebd5;
+  --bg__surah__card: #fff5e4;
+  --bg__tab: #efe2cd;
+  --text__title: #423000;
+  --text__sub__title: #524f38;
+  --border__color: rgb(100 116 139 / 0.1);
 }
-
 
 body {
-	color: var(--text__title);
-	background: var(--bg__body__home);
+  color: var(--text__title);
+  background: var(--bg__body__home);
 }
 .current {
-	color: var(--primary__color);
+  color: var(--primary__color);
 }
 .current__bg {
-	background: var(--primary__color);
+  background: var(--primary__color);
 }
 .text__title {
-	color: var(--text__title);
+  color: var(--text__title);
 }
 .text__sub__title {
-	color: var(--text__sub__title);
+  color: var(--text__sub__title);
 }
 
 .tab__bg {
-	background: var(--bg__tab);
+  background: var(--bg__tab);
 }
 .main__bg {
-	background: var(--bg__body__home);
+  background: var(--bg__body__home);
 }
 .card__bg {
-	background: var(--bg__surah__card);
+  background: var(--bg__surah__card);
 }
 .__border {
-	border-bottom: 1px solid;
-	border-color: var(--border__color);
+  border-bottom: 1px solid;
+  border-color: var(--border__color);
 }
 .border__color {
-	border-color: var(--border__color);
+  border-color: var(--border__color);
 }
 .abu__bakar__img {
-	border-color: var(--primary__color);
+  border-color: var(--primary__color);
 }
 .option__border__active {
-	border: 2px solid var(--primary__color);
+  border: 2px solid var(--primary__color);
 }
 .option__border {
-	border: 1px solid var(--bg__tab);
+  border: 1px solid var(--bg__tab);
 }
 .settings__border {
-	border: 1px solid var(--border__color);
+  border: 1px solid var(--border__color);
 }
 
 .template h4 {
-	color: var(--text__title);
+  color: var(--text__title);
 }
 
 .surah__card {
-	background: var(--bg__surah__card);
-	color: var(--text__title);
+  background: var(--bg__surah__card);
+  color: var(--text__title);
 }
 .surah__card ul {
-	background: var(--bg__body__home);
+  background: var(--bg__body__home);
 }
 .surah__card h4 {
-	color: var(--text__sub__title);
+  color: var(--text__sub__title);
 }
 
 .theme__switch__a {
-	transition: all 0.5s;
-	transform: translate(98px);
+  transition: all 0.5s;
+  transform: translate(98px);
 }
 .font__switch__a {
-	transition: all 0.5s;
-	transform: translate(43px);
+  transition: all 0.5s;
+  transform: translate(43px);
 }
 .font__switch__b {
-	transition: all 0.5s;
-	transform: translate(49px);
+  transition: all 0.5s;
+  transform: translate(49px);
 }
 .trans__back {
-	transform: translate(0);
-	transition: all 0.5s;
-}
-
-/* width manage  */
-
-.my__container {
-	width: 100%;
+  transform: translate(0);
+  transition: all 0.5s;
 }
 

@@ -19,7 +19,7 @@ const Navbar = () => {
         <div className=" flex flex-row justify-between py-8">
           <div className=" flex flex-row items-center cursor-pointer">
             <Link to="/" spy={true} smooth={true} duration={500}>
-              <h1 className=" text-2xl font-semibold hover:text-[#98dad9]">
+              <h1 className=" text-xl font-semibold hover:text-[#98dad9]">
                 বিশ্বস্ত পথ
               </h1>
             </Link>
@@ -79,15 +79,6 @@ const Navbar = () => {
               className=" hover:text-[#98dad9] transition-all cursor-pointer"
             >
               রোযা
-            </Link>
-            <Link
-              to="/blog"
-              spy={true}
-              smooth={true}
-              duration={500}
-              className=" hover:text-[#98dad9] transition-all cursor-pointer"
-            >
-              ব্লগ
             </Link>
           </nav>
 

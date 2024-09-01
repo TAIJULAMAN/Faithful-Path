@@ -1,13 +1,17 @@
 import React from "react";
+import { IoMdReturnRight } from "react-icons/io";
 
 function Durud() {
   return (
-      <div className="relative text-xl bg-[#e8e9f3] text-[#2e424d] px-[100px] py-10">
-        <h1 className="bg-[#98dad9] text-center py-5 my-10 rounded-md font-bold text-xl">
-        দরুদ শরীফ
+    <div className="relative text-xl bg-[#f8ebd5] text-[#2e424d] px-[100px] py-10">
+      <div className="bg-[#e49733] py-5 flex justify-between my-10 rounded-md px-10">
+        <h1 className=" text-[#2e424d] text-center  font-bold text-2xl">
+          দরুদ শরীফ
         </h1>
-        <div>Comming soon....</div>
+        <IoMdReturnRight size={40} />
       </div>
+      <div>Comming soon....</div>
+    </div>
   );
 }
 
