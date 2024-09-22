@@ -1,7 +1,8 @@
 import { Helmet } from "react-helmet-async";
-import HomePage from "../../components/HomePage";
 import Banner from "../../components/Banner/Banner";
 import Resources from "../../components/Resources/Resources";
+import PrayerTimes from "../../components/PrayerTimes/PrayerTimes";
+import QuranicInspiration from "../../components/QuranicInspiration/QuranicInspiration";
 
 function Home() {
   return (
@@ -9,10 +10,11 @@ function Home() {
       <Helmet>
         <title>Faithful Path | Home</title>
       </Helmet>
-      <div className="">
-       <Banner/>
-       <Resources/>
-        <HomePage/>
+      <div>
+        <Banner />
+        <Resources />
+        <PrayerTimes />
+        <QuranicInspiration/>
       </div>
     </div>
   );

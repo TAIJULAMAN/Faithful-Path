@@ -51,7 +51,7 @@ const Navbar = () => {
               duration={500}
               className=" hover:text-[#98dad9] transition-all cursor-pointer"
             >
-              দু'আ
+              দুআ
             </Link>
             <Link
               to="/sunnah"

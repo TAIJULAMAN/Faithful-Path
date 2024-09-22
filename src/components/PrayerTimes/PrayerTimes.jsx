@@ -1,5 +1,5 @@
-// 62cff7311254cac957c703ba1bf1838f
 import { useState, useEffect } from "react";
+import axios from "axios";
 
 function PrayerTimes() {
   const [prayerTimes, setPrayerTimes] = useState({});
@@ -7,48 +7,68 @@ function PrayerTimes() {
   const [error, setError] = useState(null);
 
   useEffect(() => {
-    // Fetching prayer times directly from the API
     const fetchPrayerTimes = async () => {
       try {
-        const response = await fetch(
-          "https://muslimsalat.com/dhaka/daily.json?key=62cff7311254cac957c703ba1bf1838f"
+        const response = await axios.get(
+          "/api/dhaka/daily.json?key=62cff7311254cac957c703ba1bf1838f"
         );
-        if (!response.ok) {
-          throw new Error("Failed to fetch prayer times");
-        }
-        const data = await response.json();
-        setPrayerTimes(data.items[0]); // Assuming the times are in items[0]
+        console.log("namaj time of Dhaka", response.data);
+        setPrayerTimes(response.data.items[0]);
         setLoading(false);
       } catch (err) {
         setError(err.message);
         setLoading(false);
       }
     };
-
     fetchPrayerTimes();
   }, []);
 
   if (loading) {
-    return <p>Loading prayer times...</p>;
+    return (
+      <p className="text-center text-gray-500">নামাজের সময় লোড হচ্ছে...</p>
+    );
   }
 
   if (error) {
-    return <p>Error loading prayer times: {error}</p>;
+    return (
+      <p className="text-center text-red-500">
+        নামাজের সময় লোড করতে সমস্যা হয়েছে: {error}
+      </p>
+    );
   }
 
   if (!prayerTimes) {
-    return <p>No prayer times available at the moment.</p>;
+    return (
+      <p className="text-center text-gray-500">
+        নামাজের সময় পাওয়া যাচ্ছে না।
+      </p>
+    );
   }
 
+  const filteredPrayerTimes = Object.entries(prayerTimes).filter(
+    ([key]) => key !== "shurooq" && key !== "date_for"
+  );
+
   return (
-    <section className="py-16 bg-white">
+    <section className="py-16">
       <div className="container mx-auto text-center">
-        <h2 className="text-3xl font-bold mb-6">Prayer Times for Dhaka</h2>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-          {Object.entries(prayerTimes).map(([key, value]) => (
-            <div key={key} className="bg-[#f8f3e6] p-6 rounded-lg shadow-md">
-              <h3 className="text-2xl font-bold mb-2 capitalize">{key}</h3>
-              <p>{value}</p>
+        <h2 className="text-4xl font-bold mb-10 text-gray-800">
+          ঢাকার নামাজের সময়সূচী
+        </h2>
+        <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-2">
+          {filteredPrayerTimes.map(([key, value]) => (
+            <div
+              key={key}
+              className="bg-white rounded-lg shadow-lg overflow-hidden border border-gray-200 transition-transform transform hover:scale-105 hover:shadow-xl"
+            >
+              <div className="p-6">
+                <h3 className="text-3xl font-semibold mb-4 capitalize text-indigo-600">
+                  {translatePrayerTimeKey(key)}
+                </h3>
+                <p className="text-xl font-medium text-gray-700">
+                  {translateTimeToBengali(value)}
+                </p>
+              </div>
             </div>
           ))}
         </div>
@@ -57,182 +77,32 @@ function PrayerTimes() {
   );
 }
 
+const translatePrayerTimeKey = (key) => {
+  const translations = {
+    fajr: "ফজর",
+    dhuhr: "জোহর",
+    asr: "আসর",
+    maghrib: "মাগরিব",
+    isha: "ইশা",
+  };
+  return translations[key] || key;
+};
+
+const translateTimeToBengali = (time) => {
+  const bengaliNumbers = {
+    0: "০",
+    1: "১",
+    2: "২",
+    3: "৩",
+    4: "৪",
+    5: "৫",
+    6: "৬",
+    7: "৭",
+    8: "৮",
+    9: "৯",
+  };
+
+  return time.replace(/\d/g, (digit) => bengaliNumbers[digit]);
+};
+
 export default PrayerTimes;
-
-
-
-// import { useState, useEffect } from "react";
-
-// function PrayerTimes() {
-//   const [prayerTimes, setPrayerTimes] = useState({});
-//   const [loading, setLoading] = useState(true);
-//   const [error, setError] = useState(null);
-
-//   useEffect(() => {
-//     // Fetching prayer times directly from the API
-//     const fetchPrayerTimes = async () => {
-//       try {
-//         const response = await fetch(
-//           "https://muslimsalat.com/dhaka/daily.json?key=62cff7311254cac957c703ba1bf1838f"
-//         );
-//         if (!response.ok) {
-//           throw new Error("Failed to fetch prayer times");
-//         }
-//         const data = await response.json();
-//         setPrayerTimes(data.items[0]); // Assuming the times are in items[0]
-//         setLoading(false);
-//       } catch (err) {
-//         setError(err.message);
-//         setLoading(false);
-//       }
-//     };
-
-//     fetchPrayerTimes();
-//   }, []);
-
-//   if (loading) {
-//     return <p>Loading prayer times...</p>;
-//   }
-
-//   if (error) {
-//     return <p>Error loading prayer times: {error}</p>;
-//   }
-
-//   return (
-//     <section className="py-16 bg-white">
-//       <div className="container mx-auto text-center">
-//         <h2 className="text-3xl font-bold mb-6">Prayer Times for Dhaka</h2>
-//         <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
-//           <div className="bg-[#f8f3e6] p-6 rounded-lg shadow-md">
-//             <h3 className="text-2xl font-bold mb-2">Fajr</h3>
-//             <p>{prayerTimes.fajr}</p>
-//           </div>
-//           <div className="bg-[#f8f3e6] p-6 rounded-lg shadow-md">
-//             <h3 className="text-2xl font-bold mb-2">Dhuhr</h3>
-//             <p>{prayerTimes.dhuhr}</p>
-//           </div>
-//           <div className="bg-[#f8f3e6] p-6 rounded-lg shadow-md">
-//             <h3 className="text-2xl font-bold mb-2">Asr</h3>
-//             <p>{prayerTimes.asr}</p>
-//           </div>
-//           <div className="bg-[#f8f3e6] p-6 rounded-lg shadow-md">
-//             <h3 className="text-2xl font-bold mb-2">Maghrib</h3>
-//             <p>{prayerTimes.maghrib}</p>
-//           </div>
-//           <div className="bg-[#f8f3e6] p-6 rounded-lg shadow-md">
-//             <h3 className="text-2xl font-bold mb-2">Isha</h3>
-//             <p>{prayerTimes.isha}</p>
-//           </div>
-//         </div>
-//       </div>
-//     </section>
-//   );
-// }
-
-// export default PrayerTimes;
-
-// import { useState, useEffect } from "react";
-// import { FaSun, FaMoon, FaCloudSun, FaCloud, FaPray } from "react-icons/fa"; // Importing icons for prayer times
-
-// function PrayerTimes() {
-//   // Simulating the current prayer based on time (you can customize the logic)
-//   const [currentPrayer, setCurrentPrayer] = useState("");
-
-//   useEffect(() => {
-//     const currentHour = new Date().getHours();
-//     if (currentHour >= 5 && currentHour < 12) {
-//       setCurrentPrayer("Fajr");
-//     } else if (currentHour >= 12 && currentHour < 15) {
-//       setCurrentPrayer("Dhuhr");
-//     } else if (currentHour >= 15 && currentHour < 18) {
-//       setCurrentPrayer("Asr");
-//     } else if (currentHour >= 18 && currentHour < 19) {
-//       setCurrentPrayer("Maghrib");
-//     } else {
-//       setCurrentPrayer("Isha");
-//     }
-//   }, []);
-
-//   return (
-//     <section className="py-16 bg-gradient-to-r from-blue-50 via-blue-100 to-blue-200">
-//       <div className="container mx-auto text-center">
-//         <h2 className="text-4xl font-extrabold text-blue-800 mb-10">
-//           Prayer Times for Your Location
-//         </h2>
-//         <div className="text-gray-600 mb-8">Location: Dhaka, Bangladesh</div> {/* Static location for demo */}
-
-//         <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
-//           <div
-//             className={`p-6 rounded-lg shadow-lg ${
-//               currentPrayer === "Fajr" ? "bg-green-200 border-2 border-green-600" : "bg-white"
-//             }`}
-//           >
-//             <div className="flex items-center justify-center">
-//               <FaMoon className="text-2xl text-gray-600 mr-3" />
-//               <h3 className="text-2xl font-bold mb-2">Fajr</h3>
-//             </div>
-//             <p className="text-lg">5:00 AM</p>
-//           </div>
-
-//           <div
-//             className={`p-6 rounded-lg shadow-lg ${
-//               currentPrayer === "Dhuhr" ? "bg-green-200 border-2 border-green-600" : "bg-white"
-//             }`}
-//           >
-//             <div className="flex items-center justify-center">
-//               <FaSun className="text-2xl text-yellow-600 mr-3" />
-//               <h3 className="text-2xl font-bold mb-2">Dhuhr</h3>
-//             </div>
-//             <p className="text-lg">12:30 PM</p>
-//           </div>
-
-//           <div
-//             className={`p-6 rounded-lg shadow-lg ${
-//               currentPrayer === "Asr" ? "bg-green-200 border-2 border-green-600" : "bg-white"
-//             }`}
-//           >
-//             <div className="flex items-center justify-center">
-//               <FaCloudSun className="text-2xl text-orange-500 mr-3" />
-//               <h3 className="text-2xl font-bold mb-2">Asr</h3>
-//             </div>
-//             <p className="text-lg">3:45 PM</p>
-//           </div>
-
-//           <div
-//             className={`p-6 rounded-lg shadow-lg ${
-//               currentPrayer === "Maghrib" ? "bg-green-200 border-2 border-green-600" : "bg-white"
-//             }`}
-//           >
-//             <div className="flex items-center justify-center">
-//               <FaCloud className="text-2xl text-gray-500 mr-3" />
-//               <h3 className="text-2xl font-bold mb-2">Maghrib</h3>
-//             </div>
-//             <p className="text-lg">6:00 PM</p>
-//           </div>
-
-//           <div
-//             className={`p-6 rounded-lg shadow-lg ${
-//               currentPrayer === "Isha" ? "bg-green-200 border-2 border-green-600" : "bg-white"
-//             }`}
-//           >
-//             <div className="flex items-center justify-center">
-//               <FaMoon className="text-2xl text-gray-800 mr-3" />
-//               <h3 className="text-2xl font-bold mb-2">Isha</h3>
-//             </div>
-//             <p className="text-lg">7:30 PM</p>
-//           </div>
-
-//           <div className="p-6 rounded-lg shadow-lg bg-white">
-//             <div className="flex items-center justify-center">
-//               <FaPray className="text-2xl text-blue-800 mr-3" />
-//               <h3 className="text-2xl font-bold mb-2">Jumuah</h3>
-//             </div>
-//             <p className="text-lg">1:00 PM</p>
-//           </div>
-//         </div>
-//       </div>
-//     </section>
-//   );
-// }
-
-// export default PrayerTimes;
