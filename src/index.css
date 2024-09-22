@@ -143,4 +143,11 @@ body {
   transform: translate(0);
   transition: all 0.5s;
 }
+.theme-btn {
+  @apply bg-orange-500 text-white font-bold py-2 px-4 rounded-md transition duration-300 ease-in-out;
+}
+
+.theme-btn:hover {
+  @apply bg-orange-700;
+}
 
