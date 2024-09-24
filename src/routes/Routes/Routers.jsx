@@ -7,7 +7,6 @@ import Hadith from "../../pages/Hadith/Hadith";
 import Namaz from "../../pages/Namaz/Namaz";
 import Sunnah from "../../pages/Sunnah/Sunnah";
 import Roja from "../../pages/Roja/Roja";
-import Blog from "../../pages/Blog/Blog";
 import Imaniat from "../../components/Dua/Imaniat/Imaniat";
 import BeforeDeath from "../../components/Dua/BeforeDeath/BeforeDeath";
 import Food from "../../components/Dua/Food/Food";
@@ -75,6 +74,7 @@ import Marry from "../../components/Sunnah/Marry/Marry";
 import Jumma from "../../components/Sunnah/Jumma/Jumma";
 import Homes from "../../components/Sunnah/Home/Home";
 import Hair from "../../components/Sunnah/Hair/Hair";
+import Blog from "../../UnUsed/Blog/Blog";
 
 export const router = createBrowserRouter([
   {
@@ -111,7 +111,7 @@ export const router = createBrowserRouter([
       },
       {
         path: "/blog",
-        element: <Blog />,
+        element: <Blog/>,
       },
       {
         path: "/imaniat",

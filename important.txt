@@ -1,4 +1,0 @@
-bg-[#f8ebd5] 
-text-[#2e424d]
-h1-[#e49733]
-bg-[#e49733] text-[#2e424d] text-center py-5 my-10 rounded-md font-bold text-2xl
