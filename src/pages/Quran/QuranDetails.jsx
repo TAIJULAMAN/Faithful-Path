@@ -33,7 +33,7 @@ function QuranDetails() {
     const fetchSurahData = async () => {
       try {
         // eslint-disable-next-line no-undef
-        const jsonPath = "../../public/Quran/surah/Abasa.json";
+        const jsonPath = `/${surahName}.json`;
         const response = await fetch(jsonPath);
         if (!response.ok) {
           throw new Error("Surah not found");
